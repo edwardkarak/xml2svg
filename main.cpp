@@ -14,7 +14,7 @@ bool fileExists(const char *fileName)
 int main(int argc, char **argv)
 {
 	if (argc != 3) {
-		std::cerr << "Usage: " << argv[0] << "input-file output-file\n";
+		std::cerr << "Usage: " << argv[0] << " input-file output-file\n";
 		return 1;
 	}
 
@@ -107,3 +107,4 @@ void replField(std::string &line, const std::string &old, const std::string &rep
 	while ((pos = line.find(old)) != std::string::npos)
 		line.replace(pos, old.length(), repl);
 }
+
